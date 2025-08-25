@@ -1,0 +1,301 @@
+/* FONT */
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Poppins", sans-serif;
+  margin: 0 0 10px;
+}
+
+/* HEADER */
+header .navbar {
+  background-color: #9cb870;
+  padding: 12px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  flex-wrap: wrap;
+}
+
+header .navbar .menu-toggle {
+  display: none;
+  font-size: 26px;
+  cursor: pointer;
+  color: #3d3b3a;
+}
+
+header .navbar .logo {
+  display: flex;
+  align-items: center;
+}
+
+header .navbar .logo img {
+  height: 55px;
+  margin-right: 10px;
+  border-radius: 50%;
+  border: 2px solid #3d3b3a;
+}
+
+header .navbar .logo h1 {
+  font-size: 20px;
+  font-family: "Montserrat", sans-serif;
+  color: #3d3b3a;
+  margin: 0;
+  padding-left: 10px;
+}
+
+header .navbar .nav-links {
+  margin: 0;
+  padding: 0 20px 0 0; /* ← biar ga nabrak */
+  display: flex;
+  gap: 20px;
+}
+
+header .navbar .nav-links li {
+  list-style-type: none;
+}
+
+header .navbar .nav-links a {
+  color: #3d3b3a;
+  text-decoration: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  transition: all 0.3s ease; /* smooth hover */
+}
+
+header .navbar .nav-links a:hover {
+  background-color: #b6c597;
+  color: #2b2929;
+  font-weight: bold;
+}
+
+/* saat layar kecil */
+@media (max-width: 768px) {
+  header .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  header .navbar .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: #9cb870;
+    margin-top: 10px;
+    border-radius: 8px;
+    padding: 10px 0;
+  }
+
+  header .navbar .nav-links.show {
+    display: flex;
+    animation: fadein 0.3s ease-in-out;
+  }
+
+  header .navbar .menu-toggle {
+    display: block;
+  }
+}
+
+/* MAIN */
+main {
+  padding: 40px 20px;
+  margin-top: 80px; /* biar konten ga ketiban navbar */
+}
+
+/* HERO SECTION */
+main section {
+  text-align: center;
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  scroll-margin-top: 90px; /* offset biar ga ketiban navbar */
+}
+
+main section h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+main section p {
+  max-width: 700px;
+  line-height: 1.6;
+  font-size: 16px;
+  color: #555;
+  padding: 0 10px;
+  animation: fadein 0.5s ease-in-out;
+  scroll-margin-top: 90px;
+  text-align: center;
+}
+
+/* ARTICLE (CARD STYLE DESTINASI) */
+main article {
+  margin-bottom: 50px;
+  scroll-margin-top: 90px;
+}
+
+main article h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 26px;
+}
+
+main article .destinations {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+main article .destination-card {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
+  overflow: hidden;
+  height: 300px;
+  width: 400px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  animation: fadein 0.5s ease-in-out;
+  scroll-margin-top: 90px;
+}
+
+main article .destination-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+main article .destination-card img {
+  width: 100%;
+  height: 170px;
+  object-fit: cover;
+}
+
+main article .destination-card h3 {
+  font-size: 20px;
+  margin: 12px 0 6px;
+  color: #2e2c2c;
+}
+
+main article .destination-card p {
+  font-size: 14px;
+  padding: 0 15px 20px;
+  color: #555;
+  line-height: 1.4;
+}
+
+main article .about-us {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  max-width: 1200px;
+  margin: 0 auto;
+  scroll-margin-top: 90px;;
+  text-align: center;
+  margin-top: 40px;
+  font-size: 14px;
+  color: #777;
+}
+
+/* ASIDE */
+main aside {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  scroll-margin-top: 90px;
+}
+
+main aside h2 {
+  font-size: 22px;
+  margin-bottom: 12px;
+}
+
+aside form {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+aside form label {
+  font-weight: bold;
+  text-align: left;
+}
+
+aside form input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+aside form button {
+  padding: 10px;
+  background-color: #cadcae;
+  color: #2b2929;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+aside form button:hover {
+  background-color: #b6c597;
+}
+
+/* HASIL OUTPUT */
+#formResult {
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #f1f8e9;
+  border: 1px solid #c5e1a5;
+  border-radius: 8px;
+  font-size: 14px;
+  display: none;
+}
+
+/* FOOTER */
+footer {
+  background-color: #CADCAE;
+  text-align: center;
+  padding: 15px;
+  font-size: 14px;
+  margin-top: 50px;
+}
+
+/* Animasi agar smooth */
+@keyframes fadein {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}

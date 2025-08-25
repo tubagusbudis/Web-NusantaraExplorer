@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Roboto:wght@400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/style/style.css" />
+    <title>Nusantara - Wisata Indonesia</title>
+  </head>
+  <body>
+
+    <!-- Header -->
+    <header>
+      <nav class="navbar">
+        <div class="logo">
+          <img src="/img/logo-nusantara.png" alt="Logo-Nusantara" />
+          <h1>Nusantara Explorer</h1>
+        </div>
+        <div class="menu-toggle">&#9776;</div> <!-- Burger Menu  -->
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#destinations">Destinations</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+      <section id="home">
+        <h2>Temukan Keindahan Nusantara</h2>
+        <p>
+          Jelajahi keindahan alam pantai, gunung, dan hutan di Indonesia dengan
+          pengalaman yang tak terlupakan. Nusantara Explorer menyediakan informasi
+          lengkap tentang destinasi wisata terbaik di seluruh nusantara. Bergabunglah
+          dengan kami untuk petualangan seru di negeri yang kaya akan budaya dan
+          keindahan alam.
+        </p>
+      </section>
+
+      <!-- Destinations -->
+      <article id="destinations">
+        <h2>Destinasi Populer di Nusantara</h2>
+        <div class="destinations">
+          <div class="destination-card">
+            <img src="/img/bali.jpg" alt="Bali" />
+            <h3>Bali</h3>
+            <p>Surga tropis dengan pantai indah dan budaya yang kaya.</p>
+          </div>
+          <div class="destination-card">
+            <img src="/img/raja-ampat.jpg" alt="Raja Ampat" />
+            <h3>Raja Ampat</h3>
+            <p>Keindahan bawah laut yang menakjubkan di Papua Barat.</p>
+          </div>
+          <div class="destination-card">
+            <img src="/img/borobudur.jpg" alt="Borobudur" />
+            <h3>Borobudur</h3>
+            <p>Candi Buddha terbesar di dunia yang penuh sejarah.</p>
+          </div>
+          <div class="destination-card">
+            <img src="/img/pkomodo.jpg" alt="Pulau Komodo" />
+            <h3>Komodo</h3>
+            <p>Rumah bagi komodo, kadal terbesar di dunia.</p>
+          </div>
+          <div class="destination-card">
+            <img src="/img/gunung-bromo.jpg" alt="Bromo" />
+            <h3>Bromo</h3>
+            <p>Gunung berapi aktif dengan pemandangan matahari terbit yang
+              spektakuler.</p>
+          </div>
+          <div class="destination-card">
+            <img src="/img/tana-toraja-.jpg" alt="Bromo" />
+            <h3>Tana Toraja</h3>
+            <p>Destinasi wisata alam yang menakjubkan di Sulawesi Utara.</p>
+        </div>
+
+        <div id ="about">
+          <div class="about-us">
+            <h2>Tentang Kami</h2>
+        <p>
+          Nusantara adalah platform yang didedikasikan untuk mempromosikan
+          pariwisata Indonesia. Kami menyediakan informasi lengkap tentang
+          destinasi wisata terbaik di seluruh nusantara. Dengan pengalaman dan pengunjung yang beragam, kami menciptakan pengalaman unik yang tak terlupakan bagi para wisatawan. Bergabunglah dengan kami untuk menjelajahi keindahan alam, budaya, dan tradisi Indonesia yang kaya.
+        </p>
+          </div>
+        </div>
+      </article>
+
+      <!-- About Us & Newsletter -->
+      <aside id="contact">
+        <h3">Hubungi Kami</h3>
+        <form id="contactForm">
+          <input type="text" id="name" placeholder="Nama Lengkap" required />
+          <input type="tel" id="phone" placeholder="No Whatsapp" required />
+          <input type="email" id="email" placeholder="Email" required />
+          <button type="submit">Kirim</button>
+        </form>
+
+        <div id="formResult" style="display: none;"></div> <!-- Hasil Form -->
+      </aside>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <p>
+        &copy; 2025 Nusantara Explorer | Hubungi Kami:
+        info@nusantaraexplorer.com <br> <br>
+        By: Tubagus Budi Sampurno
+      </p>
+    </footer>
+
+    <script src="/javascript/script.js"></script>
+  </body>
+</html>
